@@ -1,0 +1,131 @@
+/* Product Section Styling */
+.products-section {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.products-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.products-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 20px;
+}
+
+.products-intro h2 {
+  font-size: 2.2rem;
+  color: #ff4b2b;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.products-intro p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* .product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+} */
+ .product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 220px; /* 👈 pehle 180px tha */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 12px 0 5px;
+  color: #222;
+}
+
+.product-card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  padding: 8px 16px;
+  background-color: #ff4b2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #e6391d;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .product-card {
+    width: 45%;
+    max-width: 300px;
+  }
+
+  .products-intro h2 {
+    font-size: 2rem;
+  }
+
+  .products-intro p {
+    font-size: 0.97rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .product-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .product-card img {
+    max-height: 180px;
+  }
+
+  .products-section h2,
+  .products-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .products-intro p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,132 @@
+/* Privacy Policy Page Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy-header {
+  background: linear-gradient(to right, #1d1718, #952f1c);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.privacy-header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.privacy-header p {
+  font-size: 1.1rem;
+}
+
+.privacy-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-section h2 {
+  font-size: 1.5rem;
+  color: #952f1c;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  display: none;
+  margin-top: 10px;
+}
+
+.privacy-section p.visible {
+  display: block;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #777;
+  padding-bottom: 5px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.social-links a {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col {
+    margin: 10px 0;
+  }
+}

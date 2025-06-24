@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - Surprise Bazaar</title>
+  <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p>Your doubts, our answers.</p>
+  </header>
+
+  <section class="faq-content">
+    <div class="faq-item">
+      <h3 class="faq-question">1. What is Surprise Bazaar? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Surprise Bazaar is an online marketplace offering surprise deals on electronics, fashion, gadgets, and more.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">2. How can I track my order? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Login to your account and visit the 'My Orders' section to track your shipments.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">3. Do you offer cash on delivery? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Yes, we offer COD on selected products and locations.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">4. What is the return policy? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">You can return products within 7 days of delivery. Please read our <a href="return.html">Return Policy</a> for more details.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">5. How do I cancel an order? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Go to 'My Orders' and click on 'Cancel' next to the order you'd like to cancel before it's shipped.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">6. Are there any hidden charges? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">No hidden charges. All prices are inclusive of taxes unless stated otherwise.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">7. How can I contact customer support? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Email us at support@surprisebazaar.com or visit the <a href="contact.html">Contact Us</a> page.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">8. Is it safe to shop from Surprise Bazaar? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Absolutely! We use industry-standard security protocols and encrypted payments.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">9. Can I change my shipping address? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Yes, before shipment. Go to your account settings or contact support.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">10. Do you ship internationally? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Currently, we deliver across India only. International shipping will be introduced soon.</p>
+    </div>
+
+    <div class="faq-image">
+      <img src="images/faq-illustration.jpg" alt="FAQ Help Illustration">
+    </div>
+  </section>
+
+  <!-- Reusing Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="orders.html">My Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Surprise Bazaar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle FAQ answers
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        const icon = q.querySelector('i');
+        answer.classList.toggle('visible');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+  </script>
+</body>
+</html>

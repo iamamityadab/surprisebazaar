@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Surprise Bazaar</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
+  <script defer src="blog.js"></script>
+  <script src="header.js"></script>
+</head>
+<body> 
+  <header class="main-header">
+  <div class="container header-container">
+    <div class="header-left">
+      <a href="index.html">
+        <img src="logonew.png" alt="Surprise Bazaar Logo" class="logo-img" />
+      </a>
+    </div>
+    <div class="header-center">
+<input type="search" id="search-box" name="search" placeholder="Search products..." aria-label="Search products">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="header-right">
+      <a href="cart.html" class="btn cart-btn"><i class="fas fa-shopping-cart"></i></a>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="navbar" class="mobile-hidden">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <!-- <li><a href="signup.html">Sign Up</a></li> -->
+</li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section class="blog-section">
+      <div class="container">
+        <h1>Top 5 Latest Smartphones in 2025</h1>
+        <div id="blog-articles">
+          <!-- Detailed blog entries for 5 smartphones inserted here -->
+          <div class="blog-entry">
+            <img src="blog_images/galaxy-s24.png" alt="Galaxy S25 Ultra" class="blog-img left">
+            <div class="blog-content right">
+              <h2>Samsung Galaxy S25 Ultra</h2>
+              <p><strong>Published on:</strong> April 15, 2025</p>
+              <p>The Samsung Galaxy S25 Ultra sets a new benchmark for Android flagships in 2025. With a massive 6.9-inch Dynamic AMOLED 2X display featuring QHD+ resolution and 120Hz refresh rate, it delivers unparalleled visual clarity and smoothness. Powered by the Snapdragon 8 Gen 3, the S25 Ultra ensures top-tier performance for gaming, multitasking, and AI processing.</p>
+              <p>It features a 200MP quad-camera setup with improved Nightography, 12MP ultra-wide, 10MP periscope zoom, and AI enhancement for vivid detail. Battery life is solid with a 5000mAh capacity and 65W fast charging. Available in variants of 12GB/256GB and 16GB/512GB, the device comes in Phantom Black, Titanium Silver, and Burgundy Red.</p>
+              <p><strong>Why Buy:</strong> Premium build, top camera, long software support (5 years), and S-Pen functionality. The S25 Ultra improves over S24 Ultra in processing speed, cooling system, and display brightness. Ideal for creators and power users.</p>
+              <p><strong>Source:</strong> <a href="https://www.samsung.com/in/smartphones/galaxy-s25-ultra/" target="_blank">Samsung India</a></p>
+            </div>
+          </div>
+
+          <div class="blog-entry">
+            <img src="blog_images/apple-iphone-16-pro-max.png" alt="iPhone 16 Pro Max" class="blog-img right">
+            <div class="blog-content left">
+              <h2>Apple iPhone 16 Pro Max</h2>
+              <p><strong>Published on:</strong> April 28, 2025</p>
+              <p>The iPhone 16 Pro Max builds on Apple’s excellence with a 6.7-inch Super Retina XDR OLED, Titanium body, and the A18 Pro chip, making it the fastest iPhone to date. It features a triple camera system including a 48MP main sensor, a 5x periscope zoom lens, and a LiDAR scanner. Cinematic mode and ProRAW are enhanced with AI for perfect shots every time.</p>
+              <p>Variants include 256GB, 512GB, and 1TB storage with 8GB RAM. Battery life lasts 1.5 days with optimized iOS 19. Face ID is faster, and USB-C makes data transfers quicker. Color options: Space Black, White Titanium, Blue, and Natural Titanium.</p>
+              <p><strong>Why Buy:</strong> Ecosystem integration, industry-leading camera, long-term updates. Compared to iPhone 15 Pro Max, thermal management and camera low-light performance have seen noticeable upgrades.</p>
+              <p><strong>Source:</strong> <a href="https://www.apple.com/in/iphone-16-pro/" target="_blank">Apple India</a></p>
+            </div>
+          </div>
+  <!-- OnePlus 13 -->
+          <div class="blog-entry">
+            <img src="blog_images/one_plus_13.png" alt="OnePlus 13" class="blog-img left">
+            <div class="blog-content right">
+              <h2>OnePlus 13</h2>
+              <p><strong>Published on:</strong> May 6, 2025</p>
+              <p>The OnePlus 13 delivers premium features at an impressive price. Sporting a 6.8-inch Fluid AMOLED display with 120Hz refresh rate and QHD+ resolution, this device offers smooth visuals and vivid colors. It is powered by Snapdragon 8 Gen 3 and comes with up to 16GB LPDDR5X RAM and 512GB UFS 4.0 storage.</p>
+              <p>The rear triple camera setup includes a 50MP Sony IMX sensor, a 48MP ultra-wide, and a 32MP telephoto lens. OnePlus has optimized OxygenOS 14 to provide a snappy and bloat-free experience. With 100W SuperVOOC charging, the 5000mAh battery charges from 0 to 100% in under 25 minutes.</p>
+              <p><strong>Why Buy:</strong> Fast charging, elegant design, clean UI, strong cameras. A great upgrade over OnePlus 12, with better thermals and refined display.</p>
+              <p><strong>Source:</strong> <a href="https://www.oneplus.com/in/oneplus-13" target="_blank">OnePlus India</a></p>
+            </div>
+          </div>
+
+          <!-- Vivo X100 Pro+ -->
+          <div class="blog-entry">
+            <img src="blog_images/Vivo X100 Pro+.png" alt="Vivo X100 Pro+" class="blog-img right">
+            <div class="blog-content left">
+              <h2>Vivo X100 Pro+</h2>
+              <p><strong>Published on:</strong> May 21, 2025</p>
+              <p>The Vivo X100 Pro+ redefines mobile photography. It comes with a 6.78-inch LTPO AMOLED display, 120Hz refresh rate, and a peak brightness of 3000 nits. Under the hood, it is powered by Snapdragon 8 Gen 3 paired with Vivo’s custom V3 imaging chip.</p>
+              <p>The quad-camera includes a 50MP main sensor, a 200MP telephoto periscope, 48MP ultra-wide, and a 50MP portrait lens. Zeiss optics and advanced computational photography make it ideal for photographers. The 5400mAh battery with 120W wired and 50W wireless charging ensures all-day use.</p>
+              <p><strong>Why Buy:</strong> Exceptional camera system, sleek design, ideal for creators. Huge leap over Vivo X90 Pro+ in terms of image processing and dynamic range.</p>
+              <p><strong>Source:</strong> <a href="https://www.vivo.com/in/products/x100proplus" target="_blank">Vivo India</a></p>
+            </div>
+          </div>
+
+          <!-- Xiaomi 15 Ultra -->
+          <div class="blog-entry">
+            <img src="blog_images/xiaomi-15-ultra.png" alt="Xiaomi 15 Ultra" class="blog-img left">
+            <div class="blog-content right">
+              <h2>Xiaomi 15 Ultra</h2>
+              <p><strong>Published on:</strong> June 5, 2025</p>
+              <p>The Xiaomi 15 Ultra focuses on innovation and affordability. Featuring a 6.73-inch WQHD+ AMOLED screen with adaptive refresh rate, this phone is perfect for media consumption. It is powered by Snapdragon 8 Gen 3, comes with up to 16GB RAM and 1TB storage.</p>
+              <p>The phone boasts a 50MP Sony LYT-900 main sensor, 50MP ultra-wide, and dual 50MP zoom lenses with Leica tuning. Xiaomi also includes LiquidCool tech for better performance during extended gaming. It supports 90W wired and 80W wireless charging.</p>
+              <p><strong>Why Buy:</strong> Flagship specs at competitive pricing. Compared to Xiaomi 14 Ultra, it improves camera tuning, display brightness, and build quality.</p>
+              <p><strong>Source:</strong> <a href="https://www.mi.com/in/xiaomi-15-ultra" target="_blank">Xiaomi India</a></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="orders.html">My Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Surprise Bazaar. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

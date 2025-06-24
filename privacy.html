@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Surprise Bazaar</title>
+  <link rel="stylesheet" href="faq.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="faq-header">
+    <h1>Privacy Policy</h1>
+    <p>We value your trust. Here's how we protect it.</p>
+  </header>
+
+  <section class="faq-content">
+    <div class="faq-item">
+      <h3 class="faq-question">1. What information do we collect? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We collect your name, email address, shipping address, phone number, and payment details during purchase or account registration.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">2. How do we use your information? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We use your data to process orders, improve user experience, send order updates, and occasionally share promotional content.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">3. Do we share your data? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We do not sell your personal information. We only share with trusted partners for delivery and payment processing.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">4. How is my data protected? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We implement security protocols including SSL encryption, secure servers, and strict access controls to protect your data.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">5. Can I update or delete my information? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Yes, you can manage your account info anytime. Contact support@surprisebazaar.com for deletion requests.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">6. What are cookies? <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Cookies are small data files stored on your device to enhance browsing experience. You can disable them via browser settings.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">7. Third-party services <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We may use third-party tools like Google Analytics to understand visitor behavior. Their privacy policies may apply.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">8. Changes to policy <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We may update our privacy policy. Changes will be notified via email or a notice on our homepage.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">9. Children's privacy <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">We do not knowingly collect data from children under 13. If identified, such data will be deleted.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">10. Contact Us <i class="fas fa-chevron-down"></i></h3>
+      <p class="faq-answer">Have questions? Reach out at privacy@surprisebazaar.com.</p>
+    </div>
+
+    <div class="faq-image">
+      <img src="images/privacy.png" alt="Privacy Illustration">
+    </div>
+  </section>
+
+  <!-- Reusing Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="orders.html">My Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Surprise Bazaar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle Q&A
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        const icon = q.querySelector('i');
+        answer.classList.toggle('visible');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+  </script>
+</body>
+</html>

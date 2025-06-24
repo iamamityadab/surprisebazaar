@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Conditions - Surprise Bazaar</title>
+  <link rel="stylesheet" href="privacy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="privacy-header">
+    <h1>Terms and Conditions</h1>
+    <p>Understand the terms that govern your use of Surprise Bazaar</p>
+  </header>
+
+  <section class="privacy-content">
+    <div class="privacy-section">
+      <h2>1. Introduction <i class="fas fa-chevron-down"></i></h2>
+      <p>By using our website, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>2. Eligibility <i class="fas fa-chevron-down"></i></h2>
+      <p>Our services are available only to individuals who can form legally binding contracts under applicable law.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>3. Account Responsibilities <i class="fas fa-chevron-down"></i></h2>
+      <p>You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>4. Product Information <i class="fas fa-chevron-down"></i></h2>
+      <p>All product descriptions and prices are subject to change without notice. We reserve the right to refuse or cancel any order.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>5. Payment Terms <i class="fas fa-chevron-down"></i></h2>
+      <p>All payments must be received in full before the product is dispatched. We accept various modes of payment, listed at checkout.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>6. Intellectual Property <i class="fas fa-chevron-down"></i></h2>
+      <p>All content on this website is our property and is protected by intellectual property laws. You may not reuse or reproduce without permission.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>7. Limitation of Liability <i class="fas fa-chevron-down"></i></h2>
+      <p>We shall not be liable for any indirect, incidental, or consequential damages resulting from the use of our site or products.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>8. Changes to Terms <i class="fas fa-chevron-down"></i></h2>
+      <p>We reserve the right to update or modify these Terms at any time. It is your responsibility to check periodically for changes.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>9. Governing Law <i class="fas fa-chevron-down"></i></h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.</p>
+    </div>
+    <div class="privacy-section">
+      <h2>10. Contact Information <i class="fas fa-chevron-down"></i></h2>
+      <p>For any queries regarding these Terms, please contact us at support@surprisebazaar.com</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="orders.html">My Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Surprise Bazaar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.privacy-section h2').forEach(section => {
+      section.addEventListener('click', () => {
+        const p = section.nextElementSibling;
+        const icon = section.querySelector('i');
+        p.classList.toggle('visible');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+  </script>
+</body>
+</html>

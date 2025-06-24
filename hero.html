@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="slide active">
+        <img src="hero1.png" alt="Hero 1">
+        <div class="hero-text">
+          <h1>Welcome to Surprise Bazaar</h1>
+          <p>Big Deals Await You</p>
+          <button class="hero-btn">Shop Now</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="hero2.png" alt="Hero 2">
+        <div class="hero-text">
+          <h1>Latest Trends</h1>
+          <p>Discover Our New Arrivals</p>
+          <button class="hero-btn">Explore</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="hero3.png" alt="Hero 3">
+        <div class="hero-text">
+          <h1>Gifts & Vouchers</h1>
+          <p>Perfect for Every Occasion</p>
+          <button class="hero-btn">Grab Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Load reusable header
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+
+        const hamburger = document.getElementById("hamburger");
+        const navbar = document.getElementById("navbar");
+
+        if (hamburger && navbar) {
+          hamburger.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+          });
+        }
+      });
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 3000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Surprise Bazaar</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script defer src="signup.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Include Header -->
+   <header class="main-header">
+    <div class="container header-container">
+      <div class="header-left">
+        <a href="index.html">
+          <img src="logonew.png" alt="Surprise Bazaar Logo" class="logo-img" />
+        </a>
+      </div>
+      <div class="header-center">
+        <input type="search" placeholder="Search products..." id="search-box" aria-label="Search products" />
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="header-right">
+        <a href="cart.html" class="btn cart-btn"><i class="fas fa-shopping-cart"></i></a>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <nav id="navbar" class="mobile-hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+        <!-- <li><a href="signup.html">Sign Up</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <div class="login-container">
+        <div class="form-tabs">
+          <a href="login.html" class="tab">Login</a>
+          <a href="signup.html" class="tab active">Sign Up</a>
+        </div>
+
+        <form id="signupForm" class="form-content active">
+          <h2>Sign Up</h2>
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="signup-email" placeholder="you@example.com" required />
+
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="signup-password" placeholder="Create Password" required />
+
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+
+          <button type="submit" class="btn-primary">Sign Up</button>
+
+          <div class="or-divider">OR</div>
+          <button type="button" class="btn-google">Sign up with Google</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="orders.html">My Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Surprise Bazaar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.getElementById("navbar");
+    if (hamburger && navbar) {
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    }
+  </script>
+</body>
+</html>
